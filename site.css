@@ -96,7 +96,7 @@ iframe {
 
 #nav li {
   display: inline-block;
-  background: #ffad00;
+  background: #bf7300;
   padding: 0;
   margin: 0;
   float: left;
@@ -112,5 +112,5 @@ iframe {
 
 #nav li.selected a {
   background: #fff;
-  color: #ffad00;
+  color: #bf7300;
 }
