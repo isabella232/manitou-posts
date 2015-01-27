@@ -1,11 +1,11 @@
-baseurl: /transitscope
+baseurl: /ffmc
 permalink: pretty
 markdown: rdiscount
 prose:
   rooturl: '_posts'
-  siteurl: 'http://localdata.github.io/transitscope/'
-  relativeLinks: 'http://localdata.github.io/transitscope/links.jsonp'
-  media: '/transitscope/media'
+  siteurl: 'http://localdata.github.io/ffmc/'
+  relativeLinks: 'http://localdata.github.io/ffmc/links.jsonp'
+  media: '/ffmc/media'
   metadata:
     _posts:
       - name: "category"
