@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "NeuzeitOfficeW01-Regula";
+  src: url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/regular/regular.eot?#iefix");
+  src: url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/regular/regular.eot?#iefix") format("eot"), url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/regular/regular.woff") format("woff"), url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/regular/regular.ttf") format("truetype"), url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/regular/regular.svg#85050462-ab1f-4478-a289-36eed1d3c53f") format("svg"); }
+@font-face {
+  font-family: "Neuzeit Office W01 Bold";
+  src: url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/bold/bold.eot?#iefix");
+  src: url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/bold/bold.eot?#iefix") format("eot"), url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/bold.woff") format("woff"), url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/bold/bold.ttf") format("truetype"), url("http://localdata-static.s3-website-us-east-1.amazonaws.com/fonts/neuzeit/bold/bold.svg#d4cb246e-742d-4269-9f6a-901a050ff03f") format("svg"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: NeuzeitOfficeW01-Regula, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #fff;
+  color: #6e6663;
+}
+
+#header {
+  background: #b7aba5;
+  overflow: auto;
+  position: relative;
+  padding: 5px 0;
+}
+
+h1 {
+  display: inline-block;
+  float: left;
+}
+
+h2 {
+  padding: 20px 9%;
+  font-weight: normal;
+  font-size: 60px;
+}
+
+.full h2 {
+  padding: 20px;
+}
+
+h3 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 32px;
+  max-width: 600px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #336699;
+}
+
+.content {
+  /*
+  display: none;
+  width: 46%;
+  */
+  margin-left: 9%;
+  font-size: 16px;
+  height: 100%;
+}
+
+.content.full {
+  margin-left: 0;
+}
+
+#about {
+  width: 60%
+}
+
+p {
+  padding: 10px 0 10px 0;
+  max-width: 600px;
+}
+
+iframe {
+  border: 0;
+}
+
+#nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+#nav li {
+  display: inline-block;
+  background: #ffad00;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#nav li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+#nav li.selected a {
+  background: #fff;
+  color: #ffad00;
+}

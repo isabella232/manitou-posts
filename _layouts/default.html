@@ -1,0 +1,98 @@
+---
+title: 'TRANSITscope'
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TRANSITscope Denver</title>
+  <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      var $content = $('#content');
+      var resize = function() {
+        var headerHeight = $('#header').height() + $('#page-title').height();
+        var viewportHeight = $(window).height();
+        var newHeight = viewportHeight - headerHeight;
+        console.log("Setting height", headerHeight, viewportHeight, newHeight, $('iframe'));
+        $('iframe').height(newHeight);
+        $content.height(newHeight);
+      };
+
+      // var aboutTemplate = _.template($('#t-about').html());
+      // var embedTemplate = _.template($('#t-embed').html());
+
+      // var $embed = $(embedTemplate());
+      // var $about = $(aboutTemplate());
+      // $content.empty();
+      // $content.append($embed);
+      $( window ).resize(resize);
+      resize();
+
+
+      //$('#nav li a').click(function(event) {
+      //  // TODO
+      //  // In the future, we might just want to hide/show several iframes
+      //  // That way the content also gets preloaded.
+      //  event.preventDefault();
+//
+      //  var $iframe = $('#iframe');
+//
+      //  $content.removeClass('full');
+//
+      //  switch (this.className) {
+      //    case "overview":
+      //      $embed.detach();
+      //      $content.empty();
+      //      $content.append($embed);
+      //      $iframe.attr('src', 'https://ptx-dev.herokuapp.com/#multi/surveys/walkscope');
+      //      resize();
+      //      break;
+//
+      //    case "details":
+      //      $embed.detach();
+      //      $content.empty();
+      //      $content.addClass('full');
+      //      $content.append($embed);
+      //      $iframe.attr('src', 'https://ptx-dev.herokuapp.com/#embed/surveys/walkscope');
+      //      resize();
+      //      break;
+//
+      //    case "collect":
+      //      window.location = 'http://ptx-dev.herokuapp.com/mobile/#walkscope';
+      //      break;
+//
+      //    case "about":
+      //      $content.empty();
+      //      $content.append($about);
+      //      resize();
+      //      break;
+      //  }
+
+
+        $('#nav li').removeClass('selected');
+        $(this).parent().addClass('selected');
+    });
+  </script>
+</head>
+<body>
+  <div id="header">
+    <h1>
+      <img src="{{site.baseurl}}/img/walkscope.png" height="75" alt="">
+    </h1>
+    <ul id="nav">
+<!--       <li><a href="{{site.baseurl}}/" class="overview">Overview</a></li>
+ -->
+      <li><a href="{{site.baseurl}}/" class="overview">Map</a></li>
+<!--       <li><a href="{{site.baseurl}}/reports" class="reports">Reports</a></li>
+ -->
+      <li><a href="{{site.baseurl}}/tips" class="collect">Add Data</a></li>
+      <li><a href="{{site.baseurl}}/about" class="about">About</a></li>
+    </ul>
+  </div>
+
+  {{content}}
+
+</body>
+</html>
