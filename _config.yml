@@ -1,11 +1,11 @@
-baseurl: /ffmc
+baseurl: /manitou-posts
 permalink: pretty
 markdown: rdiscount
 prose:
   rooturl: '_posts'
-  siteurl: 'http://localdata.github.io/ffmc/'
-  relativeLinks: 'http://localdata.github.io/ffmc/links.jsonp'
-  media: '/ffmc/media'
+  siteurl: 'http://localdata.github.io/manitou-posts/'
+  relativeLinks: 'http://localdata.github.io/manitou-posts/links.jsonp'
+  media: '/manitou-posts/media'
   metadata:
     _posts:
       - name: "category"
